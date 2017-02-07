@@ -1,0 +1,39 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 14,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "user": 4,
+    "Inventory": 4
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "F87v6FenA21EZK28TxfVTZBBa52nuHlHecOk1XNkan8Tpvej86SLZfopQa4wLbfU": "{\"id\":\"F87v6FenA21EZK28TxfVTZBBa52nuHlHecOk1XNkan8Tpvej86SLZfopQa4wLbfU\",\"ttl\":1209600,\"created\":\"2017-02-06T04:11:24.104Z\",\"userId\":2}",
+      "4vZfvfHWQx4Qw0qbssr7uQuHE8JBXGBm2h0MnrOY5IfQ6KbC80TNgDwHLCWKv0c4": "{\"id\":\"4vZfvfHWQx4Qw0qbssr7uQuHE8JBXGBm2h0MnrOY5IfQ6KbC80TNgDwHLCWKv0c4\",\"ttl\":1209600,\"created\":\"2017-02-07T02:02:34.649Z\",\"userId\":2}",
+      "4AsDHoRJ2Igw0W9SXF7J5FnT2xVlc7Y6iRBd95YdNfxutmwCH4KHXNq8tlP1G7Wu": "{\"id\":\"4AsDHoRJ2Igw0W9SXF7J5FnT2xVlc7Y6iRBd95YdNfxutmwCH4KHXNq8tlP1G7Wu\",\"ttl\":1209600,\"created\":\"2017-02-07T02:26:16.187Z\",\"userId\":2}",
+      "FBhL8uLsBGCTy84gsOjdM1oyznwuHc94nnCGeF0DwqeY93AsCp7gjF2WFTVT9Fmd": "{\"id\":\"FBhL8uLsBGCTy84gsOjdM1oyznwuHc94nnCGeF0DwqeY93AsCp7gjF2WFTVT9Fmd\",\"ttl\":1209600,\"created\":\"2017-02-07T02:27:59.466Z\",\"userId\":2}",
+      "fKkH8D2FhIsi7wjsORw5MN1mrf4TfLlt7nxk1s8og5kUuGu93bGAeMTsImHi4m1u": "{\"id\":\"fKkH8D2FhIsi7wjsORw5MN1mrf4TfLlt7nxk1s8og5kUuGu93bGAeMTsImHi4m1u\",\"ttl\":1209600,\"created\":\"2017-02-07T02:30:52.751Z\",\"userId\":2}",
+      "fWcN4BotzG1pcFnQBIXne8g2M5tRlH0g4RZHn5CNP1qT2jWw2Ez5z5y7a3BCk9RV": "{\"id\":\"fWcN4BotzG1pcFnQBIXne8g2M5tRlH0g4RZHn5CNP1qT2jWw2Ez5z5y7a3BCk9RV\",\"ttl\":1209600,\"created\":\"2017-02-07T02:30:54.111Z\",\"userId\":2}",
+      "NPypTpGEEW19PYAA6yX5NFbKPseIHw6MucWlSB8glRuFOyDmH4Bbpm7NsdDTwG2m": "{\"id\":\"NPypTpGEEW19PYAA6yX5NFbKPseIHw6MucWlSB8glRuFOyDmH4Bbpm7NsdDTwG2m\",\"ttl\":1209600,\"created\":\"2017-02-07T02:30:55.734Z\",\"userId\":2}",
+      "f6BaqnuL3YpdIIsMA70PeYniTmJZwdILf7432HhCTPswxdYCN1rJAx9TB1wLKLjk": "{\"id\":\"f6BaqnuL3YpdIIsMA70PeYniTmJZwdILf7432HhCTPswxdYCN1rJAx9TB1wLKLjk\",\"ttl\":1209600,\"created\":\"2017-02-07T02:30:57.797Z\",\"userId\":2}",
+      "DUEEEWw8Dp5LrwakfFHKpCXwJczK3QOb1ehFiYSoKnErIAOlMbbFDrFmYFnw6KJt": "{\"id\":\"DUEEEWw8Dp5LrwakfFHKpCXwJczK3QOb1ehFiYSoKnErIAOlMbbFDrFmYFnw6KJt\",\"ttl\":1209600,\"created\":\"2017-02-07T02:30:59.781Z\",\"userId\":2}",
+      "bgx1w0kY8V66w2sIE5IrUwaxwFXXIqzAjtrvc6HwYXB9WhhlS99JljLJGSFTX9aI": "{\"id\":\"bgx1w0kY8V66w2sIE5IrUwaxwFXXIqzAjtrvc6HwYXB9WhhlS99JljLJGSFTX9aI\",\"ttl\":1209600,\"created\":\"2017-02-07T02:42:13.959Z\",\"userId\":2}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "user": {
+      "1": "{\"password\":\"$2a$10$.H4b6hDNRVz3Mb5dsUOTuOb3PnWBodgQKnt513UddoIh9r6ZEtIpq\",\"email\":\"upli@gmail.com\",\"id\":1,\"verificationToken\":\"90666e1a005aec5cbb26538af14796eb76b16fcc058b4bd1e477b410545302fe4fedbef5c2627595d9d443568593fdd27a335e8301b136847ac660a4b31dc677\"}",
+      "2": "{\"password\":\"$2a$10$cfLT0B3ZF12yXe9tLySfV.A7w7qVfikZEhpORGqo54wHJ4qn2.lSK\",\"email\":\"uplight.ca@gmail.com\",\"id\":2,\"verificationToken\":null,\"emailVerified\":true}",
+      "3": "{\"password\":\"$2a$10$KJnbk7oz.6Opl2BV6CUxCeD5KrKrALbOxDbR5C48k9HHegVDkXyIW\",\"email\":\"vladstitov@gmail.com\",\"id\":3,\"verificationToken\":\"59a5272b2c41e51ab462fff22eadc13100ca707cc135ddf0750dbe0bba9410a473ff95b30fad8d49cf5d672c07d83e1e2cf99cf265e2a46132cb8d0bbcff31c3\"}"
+    },
+    "Inventory": {
+      "1": "{\"product\":\"string\",\"location\":\"string\",\"available\":0,\"total\":0,\"createdOn\":\"2017-02-07T00:00:00.000Z\",\"id\":1}",
+      "2": "{\"product\":\"Product 2\",\"location\":\"new loc\",\"available\":1,\"total\":10,\"id\":2}",
+      "3": "{\"product\":\"Product 3\",\"location\":\"new loc 4\",\"available\":1,\"total\":50,\"id\":3}"
+    }
+  }
+}
