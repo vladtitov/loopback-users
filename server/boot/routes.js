@@ -5,45 +5,44 @@
 
 var dsConfig = require('../datasources.json');
 
+
+
 module.exports = function(app) {
   var User = app.models.user;
 
+   // console.log(User);
   //login page
-  app.get('/', function(req, res) {
+  app.get('/api/login', function(req, res) {
+
     var credentials = dsConfig.emailDs.transports[0].auth;
-    res.render('login', {
-      email: credentials.user,
-      password: credentials.pass
-    });
+   // res.render('login', {
+      //email: credentials.user,
+      //password: credentials.pass
+    //});
+      res.json(dsConfig.emailDs);
   });
 
   //verified
   app.get('/verified', function(req, res) {
-    res.render('verified');
+
+   // res.render('verified');
   });
 
   //log a user in
-  app.post('/login', function(req, res) {
+  app.post('/api/login', function(req, res) {
+
+      console.log(req.body);
+
     User.login({
-      email: req.body.email,
-      password: req.body.password
-    }, 'user', function(err, token) {
-      if (err) {
-        res.render('response', {
-          title: 'Login failed',
-          content: err,
-          redirectTo: '/',
-          redirectToLinkText: 'Try again'
+            email: req.body.email,
+            password: req.body.password
+            },'user').then(function (token) {
+            res.json(token);
+            }).catch(function (err) {
+            res.json(err);
+        }).done(function () {
+            console.log(' final ');
         });
-        return;
-      }
-
-      res.render('home', {
-
-        email: req.body.email,
-        accessToken: token.id
-      });
-    });
   });
 
   //log a user out
@@ -64,21 +63,22 @@ module.exports = function(app) {
     }, function(err) {
       if (err) return res.status(401).send(err);
 
-      res.render('response', {
+      /*res.render('response', {
         title: 'Password reset requested',
         content: 'Check your email for further instructions',
         redirectTo: '/',
         redirectToLinkText: 'Log in'
       });
+      */
     });
   });
 
   //show password reset form
   app.get('/reset-password', function(req, res, next) {
     if (!req.accessToken) return res.sendStatus(401);
-    res.render('password-reset', {
+   /* res.render('password-reset', {
       accessToken: req.accessToken.id
-    });
+    });*/
   });
 
   //reset the user's pasword
@@ -97,12 +97,12 @@ module.exports = function(app) {
       user.updateAttribute('password', req.body.password, function(err, user) {
       if (err) return res.sendStatus(404);
         console.log('> password reset processed successfully');
-        res.render('response', {
+       /* res.render('response', {
           title: 'Password reset success',
           content: 'Your password has been reset successfully',
           redirectTo: '/',
           redirectToLinkText: 'Log in'
-        });
+        });*/
       });
     });
   });

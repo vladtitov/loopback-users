@@ -3,10 +3,10 @@
  */
 module.exports = function(Inventory) {
 
-
     Inventory.observe('access', function(ctx, next) {
+
         const token = ctx.options && ctx.options.accessToken;
-        console.log(token);
+        console.log('access '+ token);
         const userId = token && token.userId;
         const user = userId ? 'user#' + userId : '<anonymous>';
 

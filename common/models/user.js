@@ -8,7 +8,12 @@ var path = require('path');
 
 module.exports = function(User) {
   //send verification email after registration
+
+
+
+
   User.afterRemote('create', function(context, user, next) {
+
     console.log('> user.afterRemote triggered');
 
     var options = {
@@ -29,15 +34,17 @@ module.exports = function(User) {
 
       console.log('> verification email sent:', response);
 
-      context.res.render('response', {
+     /* context.res.render('response', {
         title: 'Signed up successfully',
         content: 'Please check your email and click on the verification link ' +
             'before logging in.',
         redirectTo: '/',
         redirectToLinkText: 'Log in'
-      });
+      });*/
     });
   });
+
+
 
   //send password reset link when requested
   User.on('resetPasswordRequest', function(info) {
@@ -55,4 +62,8 @@ module.exports = function(User) {
       console.log('> sending password reset email to:', info.email);
     });
   });
+
+
+
+
 };

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<h1> Index html</h1>
+
+<script>
+    $(document).ready(function () {
+
+        var login = function () {
+
+            $.post('http://localhost:3000/api/login',
+                {email:'uplight.ca@gmail.com',password:'zaq12wsx'})
+                .done(function (res) {
+                console.log(res);
+            })
+        };
+
+
+        login();
+
+        console.log('reday');
+    })
+</script>
+</body>
+</html>
