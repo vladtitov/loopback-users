@@ -2,7 +2,38 @@
   "db": {
     "name": "db",
     "connector": "memory",
-    "file":"data/memory.json"
+    "file":"data/memory.json",
+    "debug": true
+  },
+  "mysqlDs": {
+    "host": "demo.strongloop.com",
+    "port": 3306,
+    "database": "getting_started_intermediate",
+    "username": "demo",
+    "password": "L00pBack",
+    "name": "mysqlDs",
+    "connector": "mysql"
+  },
+  "mongoDs": {
+    "host": "demo.strongloop.com",
+    "port": 27017,
+    "database": "getting_started_intermediate",
+    "username": "demo",
+    "password": "L00pBack",
+    "name": "mongoDs",
+    "connector": "mongodb"
+  },
+  "usersDB": {
+    "name": "usersDB",
+    "connector": "loopback-connector-sqlite3",
+    "file": "data/users.sqlite",
+    "debug":true
+  },
+  "postDs": {
+    "name": "postDs",
+    "connector": "loopback-connector-sqlite3",
+    "file": "data/posts.sqlite",
+    "debug":true
   },
   "emailDs": {
     "name": "emailDs",
@@ -10,15 +41,15 @@
     "transports": [
       {
         "type": "smtp",
-        "host": "smtp.gmail.com",
+        "host": "secure140.servconfig.com",
         "secure": true,
         "port": 465,
         "tls": {
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "vladstitov@gmail.com",
-          "pass": "zaq12wsxCDE#$RFV"
+          "user": "support@iottech.ca",
+          "pass": "Zaq12wsx"
         }
       }
     ]

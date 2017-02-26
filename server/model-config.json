@@ -5,6 +5,12 @@
       "loopback/server/models",
       "../common/models",
       "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
     ]
   },
   "User": {
@@ -27,18 +33,23 @@
     "dataSource": "db",
     "public": false
   },
+  "CoffeeShop": {
+    "dataSource": "mysqlDs",
+    "public": true
+  },
+  "Review": {
+    "dataSource": "mongoDs",
+    "public": true
+  },
+  "Reviewer": {
+    "dataSource": "db",
+    "public": true
+  },
   "Email": {
     "dataSource": "emailDs"
   },
-  "user": {
-    "dataSource": "db",
-    "public": true,
-    "options": {
-      "emailVerificationRequired": true
-    }
-  },
-  "Inventory": {
-    "dataSource": "db",
+  "Post": {
+    "dataSource": "postDs",
     "public": true
   }
 }
